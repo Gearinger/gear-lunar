@@ -3,13 +3,8 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
-        redirect: "/lunar",
+        component: () => import('../components/Lunar.vue'),
         children: [
-            {
-                path: '/lunar',
-                name: 'lunar',
-                component: () => import('../components/Lunar.vue'),
-            },
             {
                 path: '/search',
                 name: 'search',

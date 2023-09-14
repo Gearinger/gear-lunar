@@ -7,7 +7,7 @@ import router from '../router';
     <div class="header">
         <div class="header-title">Gear - 黄历</div>
         <a-space class="header-btn">
-            <a-button type="text" size="small" @click="router.push('/lunar')">日历</a-button>
+            <a-button type="text" size="small" @click="router.push('/')">日历</a-button>
             <a-button type="text" size="small" @click="router.push('/search')">搜索</a-button>
             <a-button type="text" size="small" @click="router.push('/tool')">工具</a-button>
         </a-space>
