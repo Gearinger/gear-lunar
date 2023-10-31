@@ -3,20 +3,19 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
+        name: 'lunar',
         component: () => import('../components/Lunar.vue'),
-        children: [
-            {
-                path: '/search',
-                name: 'search',
-                component: () => import('../components/SearchPage.vue'),
-            },
-            {
-                path: '/tool',
-                name: 'tool',
-                component: () => import('../components/Tool.vue'),
-            }
-        ]
     },
+    {
+        path: '/search',
+        name: 'search',
+        component: () => import('../components/SearchPage.vue'),
+    },
+    {
+        path: '/tool',
+        name: 'tool',
+        component: () => import('../components/Tool.vue'),
+    }
 ]
 
 const router = createRouter({
