@@ -12,7 +12,7 @@ import router from '../router';
             <a-button type="text" size="small" @click="router.push('/tool')">工具</a-button>
         </a-space>
 
-        <a class="header-github" href="https://github.com/">
+        <a class="header-github" href="https://github.com/Gearinger/gear-lunar">
             <svg height="24" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
                 class="octicon octicon-mark-github v-align-middle color-fg-default">
                 <path
